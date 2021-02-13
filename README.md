@@ -1,4 +1,4 @@
 #  curl-builder
 
-![alt text](https://github.com/douglasskiser/curl-builder/blob/master/curl-builder.png?raw=true)
+![Curl-Builder](https://raw.githubusercontent.com/douglasskiser/curl-builder/main/curl-builder.png?raw=true)
 
