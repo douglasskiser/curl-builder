@@ -12,9 +12,12 @@
 		65420AE0257019CD0071BEA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65420ADF257019CD0071BEA0 /* Assets.xcassets */; };
 		65420AE3257019CD0071BEA0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65420AE2257019CD0071BEA0 /* Preview Assets.xcassets */; };
 		65420AE6257019CD0071BEA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65420AE4257019CD0071BEA0 /* Main.storyboard */; };
+		65420AF12572995A0071BEA0 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65420AF02572995A0071BEA0 /* HeaderModel.swift */; };
+		65420AF42572A7CD0071BEA0 /* MethodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65420AF32572A7CD0071BEA0 /* MethodsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6534121625D8696600ED3143 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		65420AD8257019CA0071BEA0 /* curl-builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "curl-builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65420ADB257019CA0071BEA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65420ADD257019CA0071BEA0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +26,8 @@
 		65420AE5257019CD0071BEA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65420AE7257019CD0071BEA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65420AE8257019CD0071BEA0 /* curl_builder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = curl_builder.entitlements; sourceTree = "<group>"; };
+		65420AF02572995A0071BEA0 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		65420AF32572A7CD0071BEA0 /* MethodsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 		65420ACF257019CA0071BEA0 = {
 			isa = PBXGroup;
 			children = (
+				6534121625D8696600ED3143 /* README.md */,
 				65420ADA257019CA0071BEA0 /* curl-builder */,
 				65420AD9257019CA0071BEA0 /* Products */,
 			);
@@ -55,6 +61,7 @@
 		65420ADA257019CA0071BEA0 /* curl-builder */ = {
 			isa = PBXGroup;
 			children = (
+				65420AEF257299370071BEA0 /* models */,
 				65420ADB257019CA0071BEA0 /* AppDelegate.swift */,
 				65420ADD257019CA0071BEA0 /* ContentView.swift */,
 				65420ADF257019CD0071BEA0 /* Assets.xcassets */,
@@ -72,6 +79,15 @@
 				65420AE2257019CD0071BEA0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65420AEF257299370071BEA0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				65420AF02572995A0071BEA0 /* HeaderModel.swift */,
+				65420AF32572A7CD0071BEA0 /* MethodsModel.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +117,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					65420AD7257019CA0071BEA0 = {
 						CreatedOnToolsVersion = 12.1;
@@ -145,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65420ADE257019CA0071BEA0 /* ContentView.swift in Sources */,
+				65420AF12572995A0071BEA0 /* HeaderModel.swift in Sources */,
+				65420AF42572A7CD0071BEA0 /* MethodsModel.swift in Sources */,
 				65420ADC257019CA0071BEA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "curl-builder/curl_builder.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"curl-builder/Preview Content\"";
@@ -308,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "curl-builder/curl_builder.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"curl-builder/Preview Content\"";
